@@ -1,9 +1,10 @@
 #include <iostream>
-#include "arguments.hpp"
+
+#include "arguments.h"
 
 int main(int argc, char* argv[])
 {
-    auto args = ext_util::arguments(argc, argv);
+    auto args = std::move(ext_util::arguments(argc, argv));
 
     for (auto&& arg : args)
         std::cout << arg << " ";

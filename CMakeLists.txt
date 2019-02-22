@@ -5,6 +5,15 @@ include_directories(
 
 # arguments test
 add_executable(arguments_test
-	src/arguments.cpp
-    test/arguments_test.cpp
+    test/arguments_test.cc
+)
+
+# verison test
+add_executable(verison_test
+    test/version_test.cc
+)
+
+# preprocessor test
+add_executable(preprocessor_test
+    test/preprocessor_test.cc
 )
